@@ -1,5 +1,5 @@
 table:
-  name: addresss
+  name: address
   schema: public
 array_relationships:
   - name: contacts

@@ -1,4 +1,4 @@
-- "!include public_addresss.yaml"
+- "!include public_address.yaml"
 - "!include public_contact.yaml"
 - "!include public_device.yaml"
 - "!include public_location.yaml"
