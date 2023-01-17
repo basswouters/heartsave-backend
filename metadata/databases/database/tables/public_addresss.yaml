@@ -1,0 +1,11 @@
+table:
+  name: addresss
+  schema: public
+array_relationships:
+  - name: contacts
+    using:
+      foreign_key_constraint_on:
+        column: address_id
+        table:
+          name: contact
+          schema: public

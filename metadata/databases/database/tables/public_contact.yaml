@@ -1,6 +1,10 @@
 table:
   name: contact
   schema: public
+object_relationships:
+  - name: addresss
+    using:
+      foreign_key_constraint_on: address_id
 array_relationships:
   - name: locations
     using:
