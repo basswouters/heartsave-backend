@@ -2,13 +2,6 @@ table:
   name: address
   schema: public
 array_relationships:
-  - name: contacts
-    using:
-      foreign_key_constraint_on:
-        column: address_id
-        table:
-          name: contact
-          schema: public
   - name: locations
     using:
       foreign_key_constraint_on:

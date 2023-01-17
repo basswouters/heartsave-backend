@@ -2,6 +2,12 @@ table:
   name: device
   schema: public
 object_relationships:
+  - name: aed
+    using:
+      foreign_key_constraint_on: aed_id
+  - name: case
+    using:
+      foreign_key_constraint_on: case_id
   - name: location
     using:
       foreign_key_constraint_on: location_id
