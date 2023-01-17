@@ -2,21 +2,21 @@ table:
   name: location
   schema: public
 object_relationships:
-  - name: addresss
+  - name: address
     using:
       foreign_key_constraint_on: address_id
 array_relationships:
-  - name: contacts
-    using:
-      foreign_key_constraint_on:
-        column: location_id
-        table:
-          name: location_contact
-          schema: public
   - name: devices
     using:
       foreign_key_constraint_on:
         column: location_id
         table:
           name: device
+          schema: public
+  - name: location_contacts
+    using:
+      foreign_key_constraint_on:
+        column: location_id
+        table:
+          name: location_contact
           schema: public
