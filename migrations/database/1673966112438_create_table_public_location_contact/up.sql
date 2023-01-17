@@ -1,0 +1,2 @@
+CREATE TABLE "public"."location_contact" ("id" uuid NOT NULL DEFAULT gen_random_uuid(), "location_id" uuid NOT NULL, "contact_id" UUID NOT NULL, PRIMARY KEY ("id") , FOREIGN KEY ("location_id") REFERENCES "public"."location"("id") ON UPDATE restrict ON DELETE restrict, FOREIGN KEY ("contact_id") REFERENCES "public"."contact"("id") ON UPDATE restrict ON DELETE restrict, UNIQUE ("id"));COMMENT ON TABLE "public"."location_contact" IS E'Bridge table for location and contacts';
+CREATE EXTENSION IF NOT EXISTS pgcrypto;

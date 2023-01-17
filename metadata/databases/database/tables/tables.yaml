@@ -1,1 +1,4 @@
-- "!include public_users.yaml"
+- "!include public_contact.yaml"
+- "!include public_device.yaml"
+- "!include public_location.yaml"
+- "!include public_location_contact.yaml"

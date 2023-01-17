@@ -1,0 +1,10 @@
+table:
+  name: location_contact
+  schema: public
+object_relationships:
+  - name: contact
+    using:
+      foreign_key_constraint_on: contact_id
+  - name: location
+    using:
+      foreign_key_constraint_on: location_id
